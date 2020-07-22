@@ -4,65 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src='style.css'></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
+
     <nav id="navbar">
-        <header></header>
-        <a href="" class="a-link"></a>
-        <a href="" class="a-link"></a>
-        <a href="" class="a-link"></a>
-        <a href="" class="a-link"></a>
-        <a href="" class="a-link"></a>
+        <header>
+            <h1>GatsbyJS Documentation</h1>
+        </header>
+        <ul>
+        <li><a href="#GatsbyJS_Documentation" class="a-link">Gatsby.js Documentation</a></li>
+        <li></li><a href="#Quick_Start" class="a-link">Quick Start</a></li>
+        <li><a href="#Recipes" class="a-link">Recipes</a></li>
+        <li><a href="#Reference_Guides" class="a-link">Reference Guides</a></li>
+        <li><a href="#Gatsby_API" class="a-link">Gatsby API</a></li>
+        </ul>
     </nav>
     <main id="main-doc">
-        <!-- Main documentation goes here -->
-    
-    <section class="main-section">
+    <section id="GatsyJS_Documentation" class="main-section">
         <header class="sec-head">
-
+            <h2>GatsbyJS Documentation</h2>
         </header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <li></li>
-
+        <h3>Get Started</h3>
+        <p>There are two main ways to get started with Gatsby: </p>
+        <ul>
+            <li>
+                Tutorial: Step-by-step instructions on how to install Gatsby and start a project: written for people without Gatsby or web development experience, though these learning resources have helped developers of all skill levels. 
+            </li>
+            <li>
+                Quick start: One page summary of how to install Gatsby and start a new project.
+            </li>
+        </ul>
+        <h3>Go further</h3>
+        <p>1. Recipes: Find some quick answers for how to accomplish some specific, common tasks with Gatsby. <br>
+        2. Choose your own adventure and peruse the various sections of the Gatsby docs. <br>
+        3. Check out the Ecosystem libraries for Gatsby starters and plugins, as well as external community resources.
+        </p>
     </section>
-    <section class="main-section">
-        <header class="sec-head">
 
+    <section id="Quick_Start" class="main-section">
+        <header class="sec-head">
+            <h2>Quick Start</h2>
         </header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <li></li>
+
+        <p>This quick start is intended for intermediate to advanced developers. For a gentler intro to Gatsby, head to our tutorial!</p>
+        <h3>Install the Gatsby CLI</h3>
+        <code>npm install -g gatsby-cli</code>
+        <p>The above command installs Gatsby CLI globally on your machine.</p>
+        <h3>Create a new site</h3>
+        <code>gatsby new gatsby-site</code>
     </section>
-    <section class="main-section">
+    <section id="Recipes" class="main-section">
         <header class="sec-head">
-
+            <h2>Recipes</h2>
         </header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <li></li>
+        <h3>New automated recipes available!</h3>
+
+        <p>Looking for information on Gatsby CLI recipes? Read the press release and see the umbrella issue to learn more about automating your development workflows with gatsby recipes. Note that they are experimental.</p>
+        <p>Craving a happy medium between full-length tutorials and crawling the docs? Here’s a cookbook of guiding recipes on how to build things, Gatsby style.</p>
+        <h3>Project structure</h3>
+        <code>|-- /.cache 
+            |-- /plugins
+            |-- /public
+            |-- /src
+                |-- /pages
+                |-- /templates
+                |-- html.js
+            |-- /static
+            |-- gatsby-config.js
+            |-- gatsby-node.js
+            |-- gatsby-ssr.js
+            |-- gatsby-browser.js
+        </code>
+        <p>Some notable files and their definitions:</p>
+        <ul>
+            <li>gatsby-config.js</li>
+            <li>gatsby-node.js</li>
+            <li>gatsby-browser.js</li>
+            <li>gatsby-ssr.js</li>
+        </ul>
     </section>
-    <section class="main-section">
+    <section id="Reference_Guides" class="main-section">
         <header class="sec-head">
-
+            <h2>Reference Guides</h2>
         </header>
-        <p></p>
+        <h3>Get Stared</h3>
+
         <p></p>
         <code></code>
-        <li></li>
+
+        <p></p>
+        <code></code>
     </section>
-    <section class="main-section">
+    <section id="Gatsby_API" class="main-section">
         <header class="sec-head">
-
+            <h2>Gatsby API</h2>
         </header>
-        <p></p>
+        <h3>Get Stared</h3>
+
         <p></p>
         <code></code>
-        <li></li>
+
+        <p></p>
+        <code></code>
     </section>
     </main>
 </body>
@@ -71,7 +118,8 @@
 
 <!--
 
-User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
+User Story #4: Each section element with the class 
+of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
 
 User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
 

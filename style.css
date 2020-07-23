@@ -1,47 +1,73 @@
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#navbar{
+/* Navbar */
+
+#navbar {
     position: fixed;
     min-width: 290px;
     width: 300px;
     height: 100%;
     background-color: lightblue;
+    border-right: 3px solid black;
+    font-family: "Lato", sans-serif;
 }
 
-#navbar ul{
+#navbar header h1 {
+    text-align: center;
+}
+
+#navbar ul {
     list-style-type: none;
-    text-transform: uppercase;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 
-#navbar ul li{
-    padding-top: 10px;
+#navbar ul li {
+    border-top: 1px solid black;
+    padding: 15px 0 15px 30px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#navbar a {
     text-decoration: none;
+    color: black;
 }
 
-#main-doc{
+/* Content */
+
+#main-doc {
     position: absolute;
     margin-left: 310px;
     margin-bottom: 110px;
     padding: 0 50px 0 50px;
     text-align: justify;
+    font-family: "Source Sans Pro", sans-serif;
 }
-
-#navbar header h1{
-    text-align: center;
-}
-
-
 
 /* Responsive */
 
-@media (max-width: 600px){
-    #content{
-        display: flex;
-        flex-direction: column;
-    }   
+@media (max-width: 600px) {
+    #navbar {
+        overflow: scroll;
+        width: 100%;
+        min-height: 260px;
+        height: 250px;
+        z-index: 11;
+    }
+
+    #main-doc {
+        z-index: 0;
+        margin: 290px 0 110px 0;
+        width: 100%;
+        padding: 0 50px 0 50px;
+        text-align: justify;
+        font-family: "Source Sans Pro", sans-serif;
+    }
 }

@@ -10,21 +10,20 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
-
     <nav id="navbar">
         <header>
             <h1>GatsbyJS Documentation</h1>
         </header>
         <ul>
-        <li><a href="#GatsbyJS_Documentation" class="a-link">Gatsby.js Documentation</a></li>
-        <li></li><a href="#Quick_Start" class="a-link">Quick Start</a></li>
-        <li><a href="#Recipes" class="a-link">Recipes</a></li>
-        <li><a href="#Reference_Guides" class="a-link">Reference Guides</a></li>
-        <li><a href="#Gatsby_API" class="a-link">Gatsby API</a></li>
+        <li><a href="#GatsbyJS_Documentation" class="nav-link">GatsbyJS Documentation</a></li>
+        <li><a href="#Quick_Start" class="nav-link">Quick Start</a></li>
+        <li><a href="#Recipes" class="nav-link">Recipes</a></li>
+        <li><a href="#Reference_Guides" class="nav-link">Reference Guides</a></li>
+        <li><a href="#Gatsby_API" class="nav-link">Gatsby API</a></li>
         </ul>
     </nav>
     <main id="main-doc">
-    <section id="GatsyJS_Documentation" class="main-section">
+    <section id="GatsbyJS_Documentation" class="main-section">
         <header class="sec-head">
             <h2>GatsbyJS Documentation</h2>
         </header>
@@ -91,39 +90,45 @@
         <header class="sec-head">
             <h2>Reference Guides</h2>
         </header>
-        <h3>Get Stared</h3>
+        <p>Dive deeper into different topics around building with Gatsby, like sourcing data, building and styling pages, deployment, and more. While the tutorials are step-by-step instructions, reference guides are resources about the various Gatsby development techniques.</p>
+        <h3>Preparing Your Environment</h3>
+        <p>To get started with Gatsby, you’ll need to make sure you have the following software tools installed:</p>
+        <ul>
+            <li>Node.js</li>
+            <li>npm CLI</li>
+            <li>Gatsby CLI</li>
+        </ul>
+        <p>Install Node:</p>
+        <code>brew install node</code>
 
-        <p></p>
-        <code></code>
-
-        <p></p>
-        <code></code>
+        <p>Install Gatsby CLI</p>
+        <code>npm install -g gatsby-cli</code>
     </section>
     <section id="Gatsby_API" class="main-section">
         <header class="sec-head">
             <h2>Gatsby API</h2>
         </header>
-        <h3>Get Stared</h3>
-
-        <p></p>
-        <code></code>
-
-        <p></p>
-        <code></code>
+        <h3>Gatsby API Reference</h3>
+        <p>Learn more about Gatsby API methods and options, common files, and customizations.</p>
+        <h3>Core Gatsby APIs</h3>
+        <p>Themes are packaged Gatsby sites shipped as plugins, so you have access to all of Gatsby’s APIs for modifying default configuration settings and functionality.</p>
+        <p>If you’re new to Gatsby you can get started by following along with the guides for building out a site. Converting it to a theme will be straightforward later on since themes are prepackaged Gatsby sites.</p>
+        <h3>Configuration</h3>
+        <p>Plugins can now include a gatsby-config in addition to the other gatsby-* files. We typically refer to plugins that include a gatsby-config.js as a theme (more on that in theme composition). A typical gatsby-config.js in a user’s site that uses your theme could look like this. This example passes in two options to gatsby-theme-name: postsPath and colors.</p>
+        <code>module.exports = {
+            plugins: [
+              {
+                resolve: "gatsby-theme-name",
+                options: {
+                  postsPath: "/blog",
+                  colors: {
+                    primary: "tomato",
+                  },
+                },
+              },
+            ],
+          }</code>
     </section>
     </main>
 </body>
 </html>
-
-
-<!--
-
-User Story #4: Each section element with the class 
-of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
-
-User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
-
-User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
-
-User Story #15: My Technical Documentation page should use at least one media query.
--->
